@@ -44,6 +44,9 @@ RUN winecfg
 # Set our working directory.
 WORKDIR /wine
 
+# Setup our volume.
+VOLUME /mnt/apps
+
 # Set the entrypoint.
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
